@@ -55,7 +55,7 @@ export default {
         )
     },
     async fetchTasks () {
-      const res = await fetch('http://localhost:5000/tasks')
+      const res = await fetch('api/tasks')
       const data = await res.json()
       return data
     }
