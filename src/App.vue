@@ -1,7 +1,11 @@
 <template>
   <div>
     <div class="container">
-      <Header @toggle-add-task="toggleAddTask" title="Task Tracker" />
+      <Header
+        :showAddTask="showAddTask"
+        @toggle-add-task="toggleAddTask"
+        title="Task Tracker"
+      />
       <div v-show="showAddTask">
         <AddTask @add-task="addTask" />
       </div>
